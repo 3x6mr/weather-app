@@ -1,3 +1,13 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(2, 1, 70);
+  background: linear-gradient(
+    87deg,
+    rgb(42, 40, 127) 0%,
+    rgba(196, 0, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+}
 .App {
   text-align: center;
 }
