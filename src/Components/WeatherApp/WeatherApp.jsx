@@ -74,6 +74,13 @@ export const WeatherApp = () => {
       alert("City not found. Please try again.");
     }
   };
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      handleClick();
+    }
+  };
+
   return (
     <div className="container">
       <div className="search">
@@ -82,6 +89,7 @@ export const WeatherApp = () => {
           className="search-field"
           placeholder="Enter City"
           ref={serachRef}
+          onKeyDown={handleKeyPress}
         />
         <div className="search-icon" onClick={() => handleClick()}>
           <img src={search} alt="" />
